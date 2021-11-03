@@ -3,7 +3,7 @@
 
 
 # https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact
-ARG NODE_VERSION=16
+ARG NODE_VERSION=14
 
 # "common" stage
 FROM node:${NODE_VERSION}-alpine AS api_platform_pwa_common
@@ -12,9 +12,12 @@ EXPOSE 8000
 
 WORKDIR /usr/src/pwa
 
+ENV NEXT_TELEMETRY_DISABLED 1
+ENV NEXT_PUBLIC_ME_URL=${NEXT_PUBLIC_ME_URL}
+
 # prevent the reinstallation of node modules at every changes in the source code
-COPY package.json package-lock.json ./
-RUN npm
+COPY package.json yarn.lock ./
+RUN yarn
 
 COPY . ./
 
@@ -25,15 +28,21 @@ VOLUME /usr/src/pwa/node_modules
 # depends on the "common" stage above
 FROM api_platform_pwa_common AS api_platform_pwa_dev
 
-CMD ["npm", "run develop"]
+ENV API_PLATFORM_CLIENT_GENERATOR_OUTPUT .
+RUN yarn global add @api-platform/client-generator
+
+CMD ["yarn", "develop"]
 
 
 # "build" stage
 # depends on the "common" stage above
 FROM api_platform_pwa_common AS api_platform_pwa_prod
 
+ENV NODE_ENV production
+ARG NEXT_PUBLIC_ENTRYPOINT
 
 RUN set -eux; \
-	npm run build
+	yarn build
 
-CMD ["npm", "run develop"]
+CMD ["yarn", "develop"]
+
