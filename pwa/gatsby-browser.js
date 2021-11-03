@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import "@utrecht/design-tokens/dist/index.css";
+import "@utrecht/design-tokens/dist/theme/index.css";
 import Layout from "./src/components/common/layout";
 import {UrlContextWrapper} from "./src/context/urlContext";
 
