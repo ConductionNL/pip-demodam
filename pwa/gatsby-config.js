@@ -18,7 +18,7 @@ module.exports = {
         mergeStyleHashes: true,
         directives: {
           "script-src": "'self' 'unsafe-eval' https://unpkg.com/",
-          "style-src": "'self' 'nonce-true' https://unpkg.com/",
+          "style-src": "'self' 'nonce-true' https://unpkg.com/ 'unsafe-inline'",
           "img-src": "'self' https://demodam.nl/"
         }
       }
