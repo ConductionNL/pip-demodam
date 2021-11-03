@@ -29,6 +29,7 @@ const ThemeSwitcher = () => {
       {scriptLoaded && (
         // @ts-ignore
         <nl-theme-switcher // @ts-ignore
+          target=".utrecht-document"
           themes={JSON.stringify([
             {
               className: 'amsterdam-theme',
