@@ -5,6 +5,10 @@ import {UrlContextWrapper} from "./src/context/urlContext";
 
 export const wrapRootElement = ({ element }) => (
     <UrlContextWrapper>
-        {element}
+      <div className="utrecht-document">
+        <div class="utrecht-page">
+          {element}
+         </div>
+      </div>
     </UrlContextWrapper>
 )
