@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/pip-demodam",
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "pwa",
