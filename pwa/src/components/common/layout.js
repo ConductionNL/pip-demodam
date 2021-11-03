@@ -22,14 +22,18 @@ export default function Layout({ children }) {
     return (
         <>
             <ThemeProvider theme={theme}>
-              <Header/>
-              <MainMenu />
-              <Container>
-                  <Box paddingTop={2} paddingBottom={2}>
-                      {children}
-                  </Box>
-              </Container>
-              <Footer />
+                <div className="utrecht-page">
+                  <Header/>
+                  <MainMenu />
+                    <div className="utrecht-page-content">
+                  <Container>
+                      <Box paddingTop={2} paddingBottom={2}>
+                          {children}
+                      </Box>
+                  </Container>
+                    </div>
+                  <Footer />
+                </div>
             </ThemeProvider>
         </>
     )
