@@ -3,12 +3,12 @@ entries:
   pip-demodam:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-11-05T10:19:04.3967513+01:00"
+    created: "2021-11-05T10:20:35.0486158+01:00"
     description: A Helm chart for the Verhuizen PWA of 's-Hertogenbosch
-    digest: 81f44eefae32078de61194b4990fa78d3df0c7ed10212110e1e374aa4e395e82
+    digest: 9013c2b5f8063cb4c7c5f4a5a5761e4282db3c0ed0ea8e7868890ff35ac0c27c
     name: pip-demodam
     type: application
     urls:
     - pip-demodam-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-05T10:19:04.3947527+01:00"
+generated: "2021-11-05T10:20:35.046612+01:00"
