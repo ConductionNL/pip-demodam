@@ -37,7 +37,7 @@ spec:
           imagePullPolicy: {{ .Values.pwa.image.pullPolicy }}
           ports:
             - name: http
-              containerPort: 3000
+              containerPort: 80
               protocol: TCP
           livenessProbe:
             httpGet:

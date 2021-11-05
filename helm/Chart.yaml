@@ -21,10 +21,3 @@ version: 0.1.0
 # incremented each time you make changes to the application. Versions are not expected to
 # follow Semantic Versioning. They should reflect the version the application is using.
 appVersion: 0.1.0
-
-dependencies:
-  - name: commonground-gateway
-    alias: gateway
-    version: 0.1.2
-    repository: https://raw.githubusercontent.com/ConductionNL/commonground-gateway/master/api/helm/
-    condition: gateway.enabled

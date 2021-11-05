@@ -4,9 +4,3 @@ metadata:
   name: {{ include "api-platform.fullname" . }}
   labels:
     {{- include "api-platform.labels" . | nindent 4 }}
-data:
-  {{- if .Values.gateway.enabled }}
-  gateway-location: https://{{ .Values.ingress.hostname }}
-  {{- else }}
-  gateway-location: {{ .Values.gateway.location }}
-  {{- end }}

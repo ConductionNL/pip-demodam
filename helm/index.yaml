@@ -1,40 +1,14 @@
 apiVersion: v1
 entries:
-  commonground-gateway:
-  - apiVersion: v2
-    appVersion: 1.16.0
-    created: "2021-11-05T10:11:49.0880222+01:00"
-    dependencies:
-    - condition: postgresql.enabled
-      name: postgresql
-      repository: https://charts.bitnami.com/bitnami
-      version: 10.9.5
-    - condition: redis.enabled
-      name: redis
-      repository: https://charts.bitnami.com/bitnami
-      version: 15.3.2
-    description: A Helm chart for Kubernetes
-    digest: 2c2091d5eacc5738a7500dcfc6161cb73005a7479a1c22078c077e30fcf49d1e
-    name: commonground-gateway
-    type: application
-    urls:
-    - charts/commonground-gateway-0.1.2.tgz
-    version: 0.1.2
   pip-demodam:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-11-05T10:11:49.0740262+01:00"
-    dependencies:
-    - alias: gateway
-      condition: gateway.enabled
-      name: commonground-gateway
-      repository: https://raw.githubusercontent.com/ConductionNL/commonground-gateway/master/api/helm/
-      version: 0.1.2
+    created: "2021-11-05T10:19:04.3967513+01:00"
     description: A Helm chart for the Verhuizen PWA of 's-Hertogenbosch
-    digest: dc8c6c35e2e0d4f4f64e2b2c3835c6c49bbef9724ded895e4ff5762c9b830ae2
+    digest: 81f44eefae32078de61194b4990fa78d3df0c7ed10212110e1e374aa4e395e82
     name: pip-demodam
     type: application
     urls:
     - pip-demodam-0.1.0.tgz
     version: 0.1.0
-generated: "2021-11-05T10:11:49.0610263+01:00"
+generated: "2021-11-05T10:19:04.3947527+01:00"
