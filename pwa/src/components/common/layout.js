@@ -22,7 +22,7 @@ export default function Layout({ children }) {
     return (
         <>
             <ThemeProvider theme={theme}>
-              <div className="utrecht-document utrecht-theme">
+              <div className="utrecht-document demodam-theme">
                 <div className="utrecht-page">
                   <Header/>
                   <MainMenu />
