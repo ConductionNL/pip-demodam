@@ -9,7 +9,7 @@ pwa:
     tag: "latest"
     
 gateway: 
-  enabled: true
+  enabled: false
   fixtures: {}
   location: ""
 
