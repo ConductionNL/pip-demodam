@@ -33,6 +33,11 @@ const ThemeSwitcher = () => {
           target=".utrecht-document"
           themes={JSON.stringify([
             {
+              className: 'demodam-theme',
+              title: 'Demodam',
+              href: 'https://unpkg.com/@conductionnl/demodam-design-tokens/src/index.css',
+            },
+            {
               className: 'amsterdam-theme',
               title: '0363',
               href: 'https://unpkg.com/@nl-design-system-unstable/amsterdam-design-tokens/dist/index.css',
