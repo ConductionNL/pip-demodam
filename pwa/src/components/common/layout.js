@@ -22,6 +22,7 @@ export default function Layout({ children }) {
     return (
         <>
             <ThemeProvider theme={theme}>
+              <div className="utrecht-document utrecht-theme">
                 <div className="utrecht-page">
                   <Header/>
                   <MainMenu />
@@ -34,6 +35,7 @@ export default function Layout({ children }) {
                     </div>
                   <Footer />
                 </div>
+              </div>
             </ThemeProvider>
         </>
     )
