@@ -13,6 +13,7 @@ const ThemeSwitcher = () => {
     if (themeSwitcherScript === 'ready') {
       setScriptLoaded(true);
     }
+    console.log(themeSwitcherScript);
   }, [themeSwitcherScript]);
 
 
