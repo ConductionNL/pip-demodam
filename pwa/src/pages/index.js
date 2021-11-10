@@ -12,6 +12,7 @@ import {
   Person,
   PersonOutline, RecordVoiceOver
 } from "@mui/icons-material";
+import {useEffect} from "react";
 
 // styles
 const headingStyles = {
@@ -24,6 +25,11 @@ const headingAccentStyles = {
 // markup
 const IndexPage = () => {
     const context = useUrlContext();
+
+    useEffect(() => {
+      console.log(process.env.GATSBY_API_URL);
+      console.log(process.env.GATSBY_ME_URL);
+    }, []);
 
   return (
       <Layout>
