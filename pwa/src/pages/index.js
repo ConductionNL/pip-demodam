@@ -13,6 +13,7 @@ import {
   PersonOutline, RecordVoiceOver
 } from "@mui/icons-material";
 import {useEffect} from "react";
+import {Helmet} from "react-helmet";
 
 // styles
 const headingStyles = {
@@ -34,6 +35,9 @@ const IndexPage = () => {
 
   return (
       <Layout>
+        <Helmet>
+          <script src="/env.js" />
+        </Helmet>
         <main>
           <title>Demodam</title>
           <div style={{textAlign: 'center'}}>
