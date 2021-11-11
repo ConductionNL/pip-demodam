@@ -29,6 +29,7 @@ const IndexPage = () => {
     useEffect(() => {
       console.log(process.env.GATSBY_API_URL);
       console.log(process.env.GATSBY_ME_URL);
+      console.log(window.GATSBY_API_URL);
     }, []);
 
   return (
